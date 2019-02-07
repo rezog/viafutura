@@ -18,6 +18,7 @@ if($_GET){
 
 	$data = $dates->set_range($start, $end, $interval);
 	$nrDates = count($data);
+	// csv to file is done in javascript. spared a reload i could also have done this in php but this seemed more effecient
 	$csv = $toCsv->toFile($data);
 }
 ?>
