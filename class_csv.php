@@ -11,7 +11,7 @@ class exportCsv
 	}
 	
 	public function arrayToCsv(array &$fields, $delimiter) {
-	    $enclosure = '"';
+	    $enclosure = '"'; 
 	    $delimiter_esc = preg_quote($delimiter, '/');
 	    $enclosure_esc = preg_quote($enclosure, '/');
 	    $output = array();

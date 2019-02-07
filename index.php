@@ -6,6 +6,8 @@ error_reporting(E_ALL);
 require "class_available_dates.php";
 require "class_csv.php";
 $nrDates = 0;
+$csv ="";
+$interval ="";
 if($_GET){
 	$start =  $_GET['start'];
 	$end = $_GET['end'];

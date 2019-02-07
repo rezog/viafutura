@@ -2,10 +2,10 @@
 class available_dates 
 {
 	public function set_range($start,$end,$interval){
-		$dateRange = $this->getDatesFromRange($start, $end);
+		$dateRange = $this->getDatesFromRange($start, $end); 
 		$countInterval = 0;
 		$data = Array();
-		// counter for 
+		// counter for available dates
 		$d = 0;
 		// datums in daterange
 		for($i = 0; $i < count($dateRange); ++$i) {
